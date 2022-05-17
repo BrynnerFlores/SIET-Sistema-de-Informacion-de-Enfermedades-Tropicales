@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.4.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ResultadoBaciloscopia" pageWidth="595" pageHeight="842" columnWidth="575" leftMargin="10" rightMargin="10" topMargin="10" bottomMargin="10" uuid="b53ec391-d9b4-4d71-aba5-4e96ee3bbfe4">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<subDataset name="DataSetResultadoBaciloscopia" uuid="ed5884a2-9b35-48fb-823f-feaa7648e1df">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="fechaProcesoMuestra" class="java.sql.Date">
+			<fieldDescription><![CDATA[fechaProcesoMuestra]]></fieldDescription>
+		</field>
+		<field name="resultado1" class="java.lang.String">
+			<fieldDescription><![CDATA[resultado1]]></fieldDescription>
+		</field>
+		<field name="fechaProceso" class="java.sql.Date">
+			<fieldDescription><![CDATA[fechaProceso]]></fieldDescription>
+		</field>
+		<field name="resultado2" class="java.lang.String">
+			<fieldDescription><![CDATA[resultado2]]></fieldDescription>
+		</field>
+		<field name="resultado3" class="java.lang.String">
+			<fieldDescription><![CDATA[resultado3]]></fieldDescription>
+		</field>
+		<field name="resultado4" class="java.lang.String">
+			<fieldDescription><![CDATA[resultado4]]></fieldDescription>
+		</field>
+		<field name="resultado5" class="java.lang.String">
+			<fieldDescription><![CDATA[resultado5]]></fieldDescription>
+		</field>
+		<field name="calidadMuestra" class="java.lang.String">
+			<fieldDescription><![CDATA[calidadMuestra]]></fieldDescription>
+		</field>
+		<field name="fechaRecepcionMuestra" class="java.sql.Date">
+			<fieldDescription><![CDATA[fechaRecepcionMuestra]]></fieldDescription>
+		</field>
+		<field name="muestra" class="java.lang.String">
+			<fieldDescription><![CDATA[muestra]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="LOGO_MINISTERIO_SALUD" class="java.io.InputStream"/>
+	<parameter name="ESTABLECIMIENTO_SOLICITANTE" class="java.lang.String"/>
+	<parameter name="MEDICO_SOLICITANTE" class="java.lang.String"/>
+	<parameter name="PACIENTE" class="java.lang.String"/>
+	<parameter name="FECHA_RECOLECCION_PRIMERA_MUESTRA" class="java.sql.Date"/>
+	<parameter name="EDAD" class="java.lang.String"/>
+	<parameter name="TABLA_RESULTADO_BACILOSCOPIA" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="OBSERVACIONES" class="java.lang.String"/>
+	<parameter name="RESPONSABLE_DE_ANALISIS" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="459" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="570" height="330" uuid="512c4e0a-ae3c-4104-a72d-c0c7c9476fbe"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<image scaleImage="FillFrame" vAlign="Bottom" isUsingCache="true">
+					<reportElement x="0" y="0" width="80" height="40" uuid="5aea5192-28c0-471c-a50f-12f8a9352fe3">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{LOGO_MINISTERIO_SALUD}]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="0" y="40" width="80" height="20" uuid="5d5a4478-8fcd-4332-bfe1-2ee4a40e5f04"/>
+					<box>
+						<topPen lineWidth="0.5"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial" size="5"/>
+					</textElement>
+					<text><![CDATA[PROGRAMA NACIONAL DE
+CONTROL DE TUBERCULOSIS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="125" y="0" width="320" height="60" uuid="6d587dc1-f52b-4889-b0bd-e0be9b7c7d7c"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PROGRAMA NACIONAL DE CONTROL DE TUBERCULOSIS
+RED NACIONAL DE LABORATORIOS DE TUBERCULOSIS
+REPORTE DE EXAMEN BACTERIOLÓGICO DE LA TUBERCULOSIS
+CULTIVO PARA MICOBACTERIAS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="70" width="90" height="10" uuid="618ba3b9-e3fd-4a99-a5af-e13cc4f07baf"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Establecimiento de Salud:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="100" y="70" width="180" height="10" uuid="ffdb5c25-9cb0-4efa-9e5c-c71765d8170b"/>
+					<box>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{ESTABLECIMIENTO_SOLICITANTE}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="110" width="70" height="10" uuid="c3533304-20a7-442e-959a-483cc67ebde0"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Nombre del Paciente:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="80" y="110" width="200" height="10" uuid="46db87d2-df3b-4a81-97e3-cfbbaa09192f"/>
+					<box>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{PACIENTE}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="90" width="60" height="10" uuid="a320d51d-6626-4546-b8e5-0022b8c72601"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Medico solicitante:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="70" y="90" width="210" height="10" uuid="8a1ac5fc-b45a-4c34-98cf-0a62e96843a5"/>
+					<box>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{MEDICO_SOLICITANTE}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="130" width="140" height="10" uuid="073ee83c-be01-4e2b-9970-e71a620807f4"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Fecha de recolección de la primera muestra:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="150" y="130" width="130" height="10" uuid="141c9fb1-f2ba-40a1-91b7-eb42b6a7066b"/>
+					<box>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{FECHA_RECOLECCION_PRIMERA_MUESTRA}.toLocalDate()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="290" y="70" width="30" height="10" uuid="56f1ab1a-e805-4f52-8de1-e2f9b20ef0f4"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[SEDES:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="320" y="70" width="240" height="10" uuid="c36f94ac-59af-4a83-9ef3-02c7e3617867"/>
+					<box>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[TARIJA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="290" y="90" width="100" height="10" uuid="0caf066b-2e42-4ae8-bcf2-29c19b4af40c"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Coordinación de Red de Salud:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="390" y="90" width="170" height="10" uuid="ad140943-a2b1-4c84-ac63-12d3a7c735f1"/>
+					<box>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[BERMEJO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="290" y="110" width="50" height="10" uuid="49462bb3-0f9f-444f-bac6-d019c94a62f8"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Nº de Registro:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="340" y="110" width="90" height="10" uuid="2d48c41b-bcdf-4165-a87f-33c065753128"/>
+					<box>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="440" y="110" width="20" height="10" uuid="e6484ba7-cb71-4e1f-a2b1-afe6d7125f77"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Edad:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="460" y="110" width="100" height="10" uuid="5a1ddba0-78da-4a66-8733-b58dd27601a2"/>
+					<box>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{EDAD}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="150" width="60" height="10" uuid="fee77bfb-ecfd-464f-a672-505dd4afe4fd"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Razón de solicitud:]]></text>
+				</staticText>
+				<frame>
+					<reportElement x="10" y="220" width="390" height="20" uuid="a69550ae-9fba-44fc-a730-87a80e99745d"/>
+					<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+						<pen lineWidth="0.5"/>
+					</box>
+					<staticText>
+						<reportElement mode="Opaque" x="0" y="0" width="80" height="10" backcolor="#B5B5B5" uuid="c1f7341f-3324-48ab-9a4b-b0402d2951d8"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7" isBold="true"/>
+						</textElement>
+						<text><![CDATA[Fecha de proceso]]></text>
+					</staticText>
+					<staticText>
+						<reportElement mode="Opaque" x="80" y="0" width="70" height="10" backcolor="#B5B5B5" uuid="0924b751-b0fa-4f99-81ea-5d80b13f149f"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7" isBold="true"/>
+						</textElement>
+						<text><![CDATA[Menos de 20 días]]></text>
+					</staticText>
+					<staticText>
+						<reportElement mode="Opaque" x="150" y="0" width="80" height="10" backcolor="#B5B5B5" uuid="ba9988f0-077c-47c4-bf1b-2c9621fbbac6"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7" isBold="true"/>
+						</textElement>
+						<text><![CDATA[20 días]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="0" y="10" width="80" height="10" uuid="7ea3c910-6f3b-415f-81c5-fe94f38cacc7"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7"/>
+						</textElement>
+						<text><![CDATA[]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="80" y="10" width="70" height="10" uuid="5fc75614-18e5-4786-80ad-b33bd5074ef4"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7"/>
+						</textElement>
+						<text><![CDATA[]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="150" y="10" width="80" height="10" uuid="608468cb-684b-4f4b-ab69-59e99bb4f329"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7"/>
+						</textElement>
+						<text><![CDATA[]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="230" y="10" width="80" height="10" uuid="a5eaf93a-724b-4710-9f64-b53dc8d79b29"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7"/>
+						</textElement>
+						<text><![CDATA[]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="310" y="10" width="80" height="10" uuid="bfbbd416-5c7a-429c-9671-d7bddd3bd8ff"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7"/>
+						</textElement>
+						<text><![CDATA[]]></text>
+					</staticText>
+					<staticText>
+						<reportElement mode="Opaque" x="230" y="0" width="80" height="10" backcolor="#B5B5B5" uuid="a38c2160-aa53-45d5-a204-b61c00068ad3"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7" isBold="true"/>
+						</textElement>
+						<text><![CDATA[40 días]]></text>
+					</staticText>
+					<staticText>
+						<reportElement mode="Opaque" x="310" y="0" width="80" height="10" backcolor="#B5B5B5" uuid="8c8afcbb-e2f3-4b61-ad97-1e739c0d861a"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7" isBold="true"/>
+						</textElement>
+						<text><![CDATA[60 días]]></text>
+					</staticText>
+				</frame>
+				<staticText>
+					<reportElement positionType="Float" x="10" y="250" width="180" height="10" uuid="05b629ec-1a49-485c-8be3-06fe2134b33c"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Muestra enviada a Prueba de Sensibilidad y Resistencia:]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement positionType="Float" x="210" y="250" width="10" height="10" uuid="9880fdf0-df33-4ce9-95ff-54520244691d"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement positionType="Float" x="10" y="270" width="120" height="10" uuid="60c0c773-a558-40b7-8396-9b66f2d9ea49"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Prueba de identificación del Complejo]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement positionType="Float" x="401" y="192" width="10" height="10" uuid="e5a1a85e-ee69-4b3a-958a-f350e44b4ebe"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement positionType="Float" x="230" y="250" width="60" height="10" uuid="cd91903c-6ee5-416e-9914-d4483623d53c"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Fecha de envío:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="290" y="270" width="110" height="10" uuid="2129bb73-1ae8-41b8-82b0-985e6857d5de"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Test Inmunocromatográfico (T.I.C.)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="290" y="250" width="70" height="10" uuid="395d9e1c-e1c8-4d87-b8a6-b19dde850b40"/>
+					<box>
+						<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="331" y="191" width="70" height="10" uuid="bc5a553c-9058-4172-9fcf-a0dbabe0998d"/>
+					<box>
+						<bottomPen lineWidth="0.5" lineStyle="Dotted"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="380" y="250" width="20" height="10" uuid="5e2bbf3c-8af9-4092-9748-da25013d2527"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[NO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="10" y="310" width="50" height="10" uuid="f27eb3bd-b1ea-474f-9c47-7ed0f17ec6ef"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[No realizado:]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement positionType="Float" x="400" y="250" width="10" height="10" uuid="92df4336-6325-4f2f-ac79-89a30b07425e"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</rectangle>
+				<rectangle>
+					<reportElement positionType="Float" x="60" y="310" width="10" height="10" uuid="408067a8-f1d0-440e-ab32-9f83a4809ed0"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement x="70" y="150" width="210" height="10" uuid="0fbdbda9-34a2-4f02-801b-a1105a3ebaf5"/>
+					<box>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7" isBold="false"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="290" y="130" width="110" height="10" uuid="363d5a57-cfa4-4f2e-bad3-c2bfebe8ed8a"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Fecha de recepción de la muestra:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="400" y="130" width="160" height="10" uuid="a3149bad-9d42-4718-81ef-ab0109b3e78c"/>
+					<box>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7" isBold="false"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="10" y="170" width="60" height="10" uuid="42dab6ab-a006-441d-8539-00a64fccc4a3"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Tipo de muestra:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="10" y="190" width="60" height="10" uuid="c7024298-ac80-4eb7-b1b3-4d1480be4d62"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Medio de cultivo:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="120" y="170" width="30" height="10" uuid="64bb1fde-ebcb-4788-968e-adfb545ae98a"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Pulmonar]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement positionType="Float" x="150" y="170" width="10" height="10" uuid="d057606f-1bba-4ab5-995f-890c492d5aa1"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement positionType="Float" x="120" y="190" width="30" height="10" uuid="0d1f8377-bbb8-443c-8274-6471d3d7a62a"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Ogawa]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement positionType="Float" x="150" y="190" width="10" height="10" uuid="282bf0af-56f4-4bcc-8b34-6e15574c830e"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement positionType="Float" x="190" y="170" width="60" height="10" uuid="3f7e0071-474a-442e-9e98-d86e0c0d9401"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Extrapulmonar]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement positionType="Float" x="250" y="170" width="10" height="10" uuid="8e76322b-1fbe-4fd6-a169-433c64c3f0aa"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement positionType="Float" x="190" y="190" width="60" height="10" uuid="662302cc-7ff2-45f6-b031-98813dd5e28c"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Lowestein Jesen]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement positionType="Float" x="250" y="190" width="10" height="10" uuid="0741a3a1-0126-400d-a308-143847663b3a"/>
+					<graphicElement>
+						<pen lineWidth="0.5"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement positionType="Float" x="290" y="170" width="40" height="10" uuid="6babf0ce-bc5e-45e1-9f38-c310592c5bc7"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Especificar:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="330" y="170" width="230" height="10" uuid="78f8106e-6bb9-4699-a542-f4b15f971938"/>
+					<box>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="10" y="210" width="180" height="10" uuid="45f89f7d-021d-4c7b-a0a9-39c329bb33a4"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[RESULTADO DEL CULTIVO PARA MICOBACTERIAS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="200" y="250" width="10" height="10" uuid="82d1f72a-4672-49f0-86ff-00dc1671e03d"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[SI]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="130" y="270" width="100" height="10" uuid="cac2cc9f-3bd8-4adb-a07a-605f53c1b1e0"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="7" isItalic="true"/>
+					</textElement>
+					<text><![CDATA[Mycobacterium Tuberculosis:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement positionType="Float" x="10" y="280" width="120" height="10" uuid="f22317cb-5e3d-4513-a183-8329bcf2d6bf"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Solo si se cuenta con cultivo positivo]]></text>
+				</staticText>
+				<frame>
+					<reportElement x="210" y="300" width="258" height="20" uuid="f87147de-4423-4cdc-ba17-39cc899580f5"/>
+					<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+						<pen lineWidth="0.5"/>
+					</box>
+					<staticText>
+						<reportElement mode="Opaque" x="0" y="0" width="130" height="10" backcolor="#B5B5B5" uuid="f2ee6b8d-8d2c-4281-8074-0424cb6e053e"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7" isBold="true"/>
+						</textElement>
+						<text><![CDATA[Determinación]]></text>
+					</staticText>
+					<staticText>
+						<reportElement mode="Opaque" x="130" y="0" width="128" height="10" backcolor="#B5B5B5" uuid="306d292d-3aa7-45c6-a315-b042e3c4f63d"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7" isBold="true"/>
+						</textElement>
+						<text><![CDATA[Resultado]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="0" y="10" width="130" height="10" uuid="f93a9901-0621-477a-baf0-d76c9172dab8"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7"/>
+						</textElement>
+						<text><![CDATA[Complejo Mycobacterium Tuberculosis]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="130" y="10" width="128" height="10" uuid="96ea78c3-8fbf-4ade-970e-5fae8cdb9206"/>
+						<box>
+							<pen lineWidth="0.5"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="7"/>
+						</textElement>
+						<text><![CDATA[]]></text>
+					</staticText>
+				</frame>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="330" width="570" height="60" uuid="de3e74b1-a6e9-4a8a-b095-ccddf6ce3ccb"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<staticText>
+					<reportElement x="10" y="10" width="50" height="10" uuid="2b3ec57a-7189-454f-8210-2e9c652bd3fc"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Observaciones:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="10" y="30" width="550" height="10" uuid="952a5985-2f51-4a3c-b9df-95ada39bc351"/>
+					<box>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{OBSERVACIONES}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="390" width="570" height="69" uuid="c7cbbd93-c2e9-4587-9493-940e417afe84"/>
+				<box>
+					<pen lineWidth="0.5"/>
+				</box>
+				<staticText>
+					<reportElement x="10" y="10" width="90" height="10" uuid="88791bdf-0f49-44da-be00-280711475147"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Fecha reporte de resultado:]]></text>
+				</staticText>
+				<textField pattern="MMMMM dd, yyyy">
+					<reportElement x="100" y="10" width="280" height="10" uuid="a3d97248-92f6-4ae6-9de9-c966b4144482"/>
+					<box>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="30" width="80" height="10" uuid="bbe128da-78cb-4e11-8c14-6edf3e310679"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Examinado realizado por:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="90" y="30" width="290" height="10" uuid="135920cb-408f-4e5f-8aaf-e0da3670377e"/>
+					<box>
+						<pen lineWidth="1.0" lineStyle="Dotted"/>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{RESPONSABLE_DE_ANALISIS}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="390" y="30" width="50" height="10" uuid="a81c811f-75db-4430-93ff-e0c09f0e3bc5"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Firma y sello:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="440" y="30" width="120" height="10" uuid="5e65d4f4-4f47-4fe3-9877-1cf63d1610ea"/>
+					<box>
+						<bottomPen lineWidth="0.5"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="10" y="50" width="160" height="10" uuid="162a3eaf-112c-4620-852a-08f4f868cb48">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Arial" size="7"/>
+					</textElement>
+					<text><![CDATA[Nombre del laboratorio responsable del proceso:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="170" y="50" width="210" height="10" uuid="a704adcb-e8b3-46b2-9300-25fc05a68530"/>
+					<box>
+						<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[CERETROP]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
