@@ -27,7 +27,7 @@ implementar. También se permite controlar las muestras biológicas que son perm
 - **Gestion de Informes**
   <br>En este componente se genera el Informe Mensual en formato PDF para que luego pueda ser cargado al SNIS.
 
-# Capturas de Pantalla
+## Capturas de Pantalla
 <img src="/img/img1.png"/>
 <img src="/img/img2.png"/>
 <img src="/img/img3.png"/>
