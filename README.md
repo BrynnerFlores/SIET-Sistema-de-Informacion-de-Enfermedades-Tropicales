@@ -26,3 +26,61 @@ implementar. También se permite controlar las muestras biológicas que son perm
 
 - **Gestion de Informes**
   <br>En este componente se genera el Informe Mensual en formato PDF para que luego pueda ser cargado al SNIS.
+
+# Capturas de Pantalla
+<img src="/img/img1.png"/>
+<img src="/img/img2.png"/>
+<img src="/img/img3.png"/>
+<img src="/img/img4.png"/>
+<img src="/img/img5.png"/>
+<img src="/img/img6.png"/>
+<img src="/img/img7.png"/>
+<img src="/img/img8.png"/>
+<img src="/img/img9.png"/>
+<img src="/img/img10.png"/>
+<img src="/img/img11.png"/>
+<img src="/img/img12.png"/>
+<img src="/img/img13.png"/>
+<img src="/img/img14.png"/>
+<img src="/img/img15.png"/>
+<img src="/img/img16.png"/>
+<img src="/img/img17.png"/>
+<img src="/img/img18.png"/>
+<img src="/img/img19.png"/>
+<img src="/img/img20.png"/>
+<img src="/img/img21.png"/>
+<img src="/img/img22.png"/>
+<img src="/img/img23.png"/>
+<img src="/img/img24.png"/>
+<img src="/img/img25.png"/>
+<img src="/img/img26.png"/>
+<img src="/img/img27.png"/>
+<img src="/img/img28.png"/>
+<img src="/img/img29.png"/>
+<img src="/img/img30.png"/>
+<img src="/img/img31.png"/>
+<img src="/img/img32.png"/>
+<img src="/img/img33.png"/>
+<img src="/img/img34.png"/>
+<img src="/img/img35.png"/>
+<img src="/img/img36.png"/>
+<img src="/img/img37.png"/>
+<img src="/img/img38.png"/>
+<img src="/img/img39.png"/>
+<img src="/img/img40.png"/>
+<img src="/img/img41.png"/>
+<img src="/img/img42.png"/>
+<img src="/img/img43.png"/>
+<img src="/img/img44.png"/>
+<img src="/img/img45.png"/>
+<img src="/img/img46.png"/>
+<img src="/img/img47.png"/>
+<img src="/img/img48.png"/>
+<img src="/img/img49.png"/>
+<img src="/img/img50.png"/>
+<img src="/img/img51.png"/>
+<img src="/img/img52.png"/>
+<img src="/img/img53.png"/>
+<img src="/img/img54.png"/>
+<img src="/img/img55.png"/>
+<img src="/img/img56.png"/>
