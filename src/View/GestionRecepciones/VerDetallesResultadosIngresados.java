@@ -1012,7 +1012,8 @@ public class VerDetallesResultadosIngresados extends javax.swing.JDialog {
 
                     switch (resultadoGeneralPersonalizado.getResultadoGeneral().getExamenSolicitado().getExamen().getExamenNombre()) {
                         case "COPROPARASITOLOGICO SIMPLE":
-                        case "COPROPARASITOLOGICO SERIADO": {
+                        case "COPROPARASITOLOGICO SERIADO":
+                        case "PARASITOLOGICO": {
 
                             parameters.put("IMPRIMIR_CUADRO_OBSERVACION_MACROSCOPICA", true);
                             parameters.put("IMPRIMIR_CUADRO_OBSERVACION_MICROSCOPICA", true);

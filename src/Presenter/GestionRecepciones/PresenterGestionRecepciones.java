@@ -275,7 +275,7 @@ public class PresenterGestionRecepciones {
                     break;
 
                 case 1:
-                    callBackVerificarPermitirModificacion.permisoNegado("No es posible modificar la recepción. El plazo de 4800 horas expiró.");
+                    callBackVerificarPermitirModificacion.permisoNegado("No es posible modificar la recepción. El plazo de 48 horas expiró.");
                     break;
 
                 default:

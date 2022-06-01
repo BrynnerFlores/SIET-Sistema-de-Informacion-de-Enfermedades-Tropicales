@@ -64,7 +64,7 @@ public class SQLRecepcion {
     private final String SQL_ELIMINAR_EXAMEN_SOLICITADO = "UPDATE aexasol SET caesexsoes = 0 WHERE paescoexso = ? AND caesexsoes = 1";
     
     private final String SQL_VERIFICAR_TABLA_VACIA_RECEPCIONES = "SELECT CASE WHEN EXISTS (SELECT 1 FROM arecepc) THEN TRUE ELSE FALSE END";
-    private final String SQL_VERIFICAR_PERMITIR_MODIFICACION = "SELECT CASE WHEN ((SELECT EXTRACT(EPOCH FROM(CURRENT_TIMESTAMP - (SELECT CONCAT((SELECT carefecrec FROM arecepc WHERE parecodrec = ?),' ',(SELECT carehorrec FROM arecepc WHERE parecodrec = ?))::timestamp)))/3600) > 1) THEN TRUE ELSE FALSE END";
+    private final String SQL_VERIFICAR_PERMITIR_MODIFICACION = "SELECT CASE WHEN ((SELECT EXTRACT(EPOCH FROM(CURRENT_TIMESTAMP - (SELECT CONCAT((SELECT carefecrec FROM arecepc WHERE parecodrec = ?),' ',(SELECT carehorrec FROM arecepc WHERE parecodrec = ?))::timestamp)))/3600) > 48) THEN TRUE ELSE FALSE END";
     
     private final PersonalTecnico PERSONAL_TECNICO;
         
