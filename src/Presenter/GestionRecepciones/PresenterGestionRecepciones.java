@@ -267,15 +267,15 @@ public class PresenterGestionRecepciones {
                         final boolean result = sqlRecepcion.actualizar(examenesSolicitados);
 
                         if (result) {
-                            callBackActualizarRecepcion.recepcionActualizada("Recepcion actualizada correctamente.");
+                            callBackActualizarRecepcion.recepcionActualizada("Recepción actualizada correctamente.");
                         } else {
-                            callBackActualizarRecepcion.errorActualizarRecepcion("No se pudo actualizar la recepcion.");
+                            callBackActualizarRecepcion.errorActualizarRecepcion("No se pudo actualizar la recepción.");
                         }
                     }
                     break;
 
                 case 1:
-                    callBackVerificarPermitirModificacion.permisoNegado("No es posible modificar la recepción. El plazo de 48 horas expiró.");
+                    callBackVerificarPermitirModificacion.permisoNegado("No es posible modificar la recepción. El plazo de 4800 horas expiró.");
                     break;
 
                 default:

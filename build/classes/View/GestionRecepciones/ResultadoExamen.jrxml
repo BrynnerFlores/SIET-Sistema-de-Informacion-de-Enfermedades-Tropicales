@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.4.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ResultadoExamen" pageWidth="612" pageHeight="792" columnWidth="500" leftMargin="56" rightMargin="56" topMargin="56" bottomMargin="56" uuid="aef72aa3-d380-4bb9-8f7e-4cc2382a91de">
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.4.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ResultadoExamen" pageWidth="612" pageHeight="792" columnWidth="542" leftMargin="35" rightMargin="35" topMargin="19" bottomMargin="19" uuid="aef72aa3-d380-4bb9-8f7e-4cc2382a91de">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
 	<style name="Table_TH" mode="Opaque" forecolor="#FFFFFF" backcolor="rgba(183, 186, 189, 0.78431374)">
 		<box>
 			<pen lineWidth="0.5" lineColor="#000000"/>
@@ -161,9 +167,9 @@
 		<![CDATA[]]>
 	</queryString>
 	<background>
-		<band height="571">
+		<band height="754">
 			<image isUsingCache="true">
-				<reportElement mode="Opaque" x="0" y="71" width="500" height="500" forecolor="#000000" backcolor="#FFFFFF" uuid="38d69bd0-ec68-4996-9831-a662910b5b94">
+				<reportElement mode="Opaque" x="21" y="130" width="500" height="500" forecolor="#000000" backcolor="#FFFFFF" uuid="38d69bd0-ec68-4996-9831-a662910b5b94">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -174,7 +180,7 @@
 	<columnHeader>
 		<band height="109">
 			<frame>
-				<reportElement x="0" y="0" width="500" height="60" uuid="4ae67966-0c01-4765-8a6d-b0ee6c11f576"/>
+				<reportElement x="0" y="0" width="540" height="60" uuid="4ae67966-0c01-4765-8a6d-b0ee6c11f576"/>
 				<image isUsingCache="true">
 					<reportElement x="0" y="0" width="65" height="60" uuid="937722ee-1305-4930-8cad-2adba2429bc2">
 						<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -183,7 +189,7 @@
 					<imageExpression><![CDATA[$P{LOGO_CERETROP}]]></imageExpression>
 				</image>
 				<image isUsingCache="true">
-					<reportElement x="440" y="0" width="59" height="60" uuid="3a9f46c0-e6d2-4a35-b579-402fdebd4e70">
+					<reportElement x="480" y="0" width="60" height="60" uuid="3a9f46c0-e6d2-4a35-b579-402fdebd4e70">
 						<property name="com.jaspersoft.studio.unit.width" value="px"/>
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 						<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
@@ -191,42 +197,42 @@
 					<imageExpression><![CDATA[$P{LOGO_BERMEJO}]]></imageExpression>
 				</image>
 				<staticText>
-					<reportElement x="121" y="0" width="259" height="10" forecolor="#000000" uuid="8e810d2a-3f45-470b-a0ee-b57fd71a1660"/>
+					<reportElement x="141" y="0" width="259" height="10" forecolor="#000000" uuid="8e810d2a-3f45-470b-a0ee-b57fd71a1660"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial Black" size="7" isBold="false"/>
 					</textElement>
 					<text><![CDATA[MINISTERIO DE SALUD]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="121" y="10" width="259" height="10" forecolor="#000000" uuid="8c938a58-80ee-4d33-a0bb-31d90a068756"/>
+					<reportElement x="141" y="10" width="259" height="10" forecolor="#000000" uuid="8c938a58-80ee-4d33-a0bb-31d90a068756"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial Black" size="7" isBold="false"/>
 					</textElement>
 					<text><![CDATA[SERVICIO DEPARTAMENTAL DE SALUD]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="121" y="20" width="259" height="10" forecolor="#000000" uuid="b8530e24-8321-4465-a2b7-4337deda6ad7"/>
+					<reportElement x="141" y="20" width="259" height="10" forecolor="#000000" uuid="b8530e24-8321-4465-a2b7-4337deda6ad7"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial Black" size="7" isBold="false"/>
 					</textElement>
 					<text><![CDATA[RED DE SERVICIO DE SALUD BERMEJO]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="121" y="30" width="259" height="10" forecolor="#000000" uuid="7cebe5cf-5283-49d3-8ec0-90fef2089a60"/>
+					<reportElement x="141" y="30" width="259" height="10" forecolor="#000000" uuid="7cebe5cf-5283-49d3-8ec0-90fef2089a60"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial Black" size="7" isBold="false"/>
 					</textElement>
 					<text><![CDATA[CENTRO REGIONAL DE ENFERMEDADES TROPICALES]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="121" y="40" width="259" height="10" forecolor="#000000" uuid="510621f7-59c4-4cad-996b-90c10ca4ee72"/>
+					<reportElement x="141" y="40" width="259" height="10" forecolor="#000000" uuid="510621f7-59c4-4cad-996b-90c10ca4ee72"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial Black" size="7" isBold="false"/>
 					</textElement>
 					<text><![CDATA[Calle Beni esq. Av. Bolivar # 359 Email: ceretrop.bjo@gmail.com]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="121" y="50" width="259" height="10" forecolor="#000000" uuid="30708661-43f6-4593-b366-5ae5bb363d43"/>
+					<reportElement x="141" y="50" width="259" height="10" forecolor="#000000" uuid="30708661-43f6-4593-b366-5ae5bb363d43"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font fontName="Arial Black" size="7" isBold="false"/>
 					</textElement>
@@ -234,7 +240,7 @@
 				</staticText>
 			</frame>
 			<frame>
-				<reportElement x="0" y="60" width="200" height="49" uuid="8952f43c-5b66-44be-804c-b05c52630f31"/>
+				<reportElement x="0" y="60" width="220" height="49" uuid="8952f43c-5b66-44be-804c-b05c52630f31"/>
 				<staticText>
 					<reportElement x="0" y="10" width="65" height="10" uuid="107d5f84-2415-4c87-892f-f586a84486ce"/>
 					<textElement verticalAlignment="Middle">
@@ -267,28 +273,28 @@
 					<text><![CDATA[SEXO:]]></text>
 				</staticText>
 				<textField>
-					<reportElement x="65" y="10" width="135" height="10" uuid="3e783b43-304d-4faf-beb4-52cf3dff2585"/>
+					<reportElement x="65" y="10" width="155" height="10" uuid="3e783b43-304d-4faf-beb4-52cf3dff2585"/>
 					<textElement verticalAlignment="Middle">
 						<font size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$P{PACIENTE}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="65" y="20" width="135" height="10" uuid="7c6bd314-d95f-4425-83ac-6409f5287667"/>
+					<reportElement x="65" y="20" width="155" height="10" uuid="7c6bd314-d95f-4425-83ac-6409f5287667"/>
 					<textElement verticalAlignment="Middle">
 						<font size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$P{CEDULA_IDENTIDAD}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="65" y="30" width="135" height="10" uuid="b87c1aa6-00e5-4dd7-8ced-66771757467a"/>
+					<reportElement x="65" y="30" width="155" height="10" uuid="b87c1aa6-00e5-4dd7-8ced-66771757467a"/>
 					<textElement verticalAlignment="Middle">
 						<font size="7"/>
 					</textElement>
 					<textFieldExpression><![CDATA[$P{EDAD}]]></textFieldExpression>
 				</textField>
 				<textField>
-					<reportElement x="65" y="40" width="135" height="9" uuid="f9d7d8b3-32de-4e04-a839-7a9dc4cdec8c"/>
+					<reportElement x="65" y="40" width="155" height="9" uuid="f9d7d8b3-32de-4e04-a839-7a9dc4cdec8c"/>
 					<textElement verticalAlignment="Middle">
 						<font size="7"/>
 					</textElement>
@@ -296,7 +302,52 @@
 				</textField>
 			</frame>
 			<frame>
-				<reportElement x="200" y="60" width="160" height="49" uuid="d5c9220c-d479-4775-8fcc-fd60fcf8c1ba"/>
+				<reportElement x="380" y="60" width="160" height="49" uuid="4e4cdf11-bb13-4c64-944a-597aea6086e0"/>
+				<staticText>
+					<reportElement x="0" y="30" width="90" height="10" uuid="a4c95b02-b4f7-4797-b2ab-319cf72bd29f"/>
+					<textElement>
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Nº REG. LAB:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="10" width="90" height="10" uuid="76c48fb0-e038-447b-9513-7bc628c40968"/>
+					<textElement>
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[FECHA. RECEPCION:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="20" width="90" height="10" uuid="b5de6545-678f-4ab3-88ff-2984d4c356ac"/>
+					<textElement>
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[FECHA TOMA MUESTRA:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="90" y="10" width="70" height="10" uuid="7c866a1a-d89d-4184-9dc9-4f5a99e81ae2"/>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{FECHA_RECEPCION}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="90" y="20" width="70" height="10" uuid="dad8bbe7-3494-4186-a7d3-75185f1accaf"/>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{FECHA_TOMA_MUESTRA}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement mode="Transparent" x="90" y="30" width="70" height="10" backcolor="#FFFFFF" uuid="684cf17d-db47-4cf4-bd80-48d78e5de4dc"/>
+					<textElement verticalAlignment="Middle">
+						<font size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{CODIGO_REGISTRO_LABORATORIO}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="220" y="60" width="160" height="49" uuid="d5c9220c-d479-4775-8fcc-fd60fcf8c1ba"/>
 				<staticText>
 					<reportElement x="0" y="10" width="50" height="10" uuid="64b143de-1bdd-4578-afd3-967355086976"/>
 					<textElement>
@@ -326,55 +377,10 @@
 					<textFieldExpression><![CDATA[$P{MEDICO}]]></textFieldExpression>
 				</textField>
 			</frame>
-			<frame>
-				<reportElement x="360" y="60" width="140" height="49" uuid="4e4cdf11-bb13-4c64-944a-597aea6086e0"/>
-				<staticText>
-					<reportElement x="0" y="30" width="90" height="10" uuid="a4c95b02-b4f7-4797-b2ab-319cf72bd29f"/>
-					<textElement>
-						<font size="7" isBold="true"/>
-					</textElement>
-					<text><![CDATA[Nº REG. LAB:]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="0" y="10" width="90" height="10" uuid="76c48fb0-e038-447b-9513-7bc628c40968"/>
-					<textElement>
-						<font size="7" isBold="true"/>
-					</textElement>
-					<text><![CDATA[FECHA. RECEPCION:]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="0" y="20" width="90" height="10" uuid="b5de6545-678f-4ab3-88ff-2984d4c356ac"/>
-					<textElement>
-						<font size="7" isBold="true"/>
-					</textElement>
-					<text><![CDATA[FECHA TOMA MUESTRA:]]></text>
-				</staticText>
-				<textField>
-					<reportElement x="90" y="10" width="48" height="10" uuid="7c866a1a-d89d-4184-9dc9-4f5a99e81ae2"/>
-					<textElement>
-						<font size="7"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$P{FECHA_RECEPCION}]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement x="90" y="20" width="48" height="10" uuid="dad8bbe7-3494-4186-a7d3-75185f1accaf"/>
-					<textElement>
-						<font size="7"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$P{FECHA_TOMA_MUESTRA}]]></textFieldExpression>
-				</textField>
-				<textField>
-					<reportElement mode="Transparent" x="90" y="30" width="48" height="10" backcolor="#FFFFFF" uuid="684cf17d-db47-4cf4-bd80-48d78e5de4dc"/>
-					<textElement verticalAlignment="Middle">
-						<font size="7"/>
-					</textElement>
-					<textFieldExpression><![CDATA[$P{CODIGO_REGISTRO_LABORATORIO}]]></textFieldExpression>
-				</textField>
-			</frame>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="310">
+		<band height="280">
 			<staticText>
 				<reportElement mode="Opaque" x="0" y="10" width="50" height="10" backcolor="#C2C2C2" uuid="bf0e1bc6-fab0-4b58-8322-a25789d4b5dc"/>
 				<box>
@@ -390,7 +396,7 @@
 				<text><![CDATA[MUESTRA:]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="50" y="10" width="110" height="10" uuid="1ba64675-71cb-4767-81b9-5128eed828cb"/>
+				<reportElement x="50" y="10" width="150" height="10" uuid="1ba64675-71cb-4767-81b9-5128eed828cb"/>
 				<box>
 					<pen lineWidth="0.5"/>
 				</box>
@@ -400,7 +406,7 @@
 				<textFieldExpression><![CDATA[$P{MUESTRA_BIOLOGICA}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" mode="Opaque" x="160" y="10" width="100" height="10" isRemoveLineWhenBlank="true" backcolor="#C2C2C2" uuid="500d6c8b-0278-4330-bb05-e6ecb30462c9">
+				<reportElement positionType="Float" mode="Opaque" x="200" y="10" width="100" height="10" isRemoveLineWhenBlank="true" backcolor="#C2C2C2" uuid="500d6c8b-0278-4330-bb05-e6ecb30462c9">
 					<printWhenExpression><![CDATA[$P{IMPRIMIR_NUMERO_DIAS_SINTOMAS}]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -416,7 +422,7 @@
 				<text><![CDATA[Nº DIAS DE SINTOMAS:]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement positionType="Float" x="260" y="10" width="40" height="10" isRemoveLineWhenBlank="true" uuid="693b5cac-80e9-41ee-8941-361d5d0ecf85">
+				<reportElement positionType="Float" x="300" y="10" width="50" height="10" isRemoveLineWhenBlank="true" uuid="693b5cac-80e9-41ee-8941-361d5d0ecf85">
 					<printWhenExpression><![CDATA[$P{IMPRIMIR_NUMERO_DIAS_SINTOMAS}]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -428,7 +434,7 @@
 				<textFieldExpression><![CDATA[$P{NUMERO_DIAS_SINTOMAS}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" mode="Opaque" x="300" y="10" width="110" height="10" isRemoveLineWhenBlank="true" backcolor="#C2C2C2" uuid="5299e255-0128-47d8-baa0-df0442ab85f7">
+				<reportElement positionType="Float" mode="Opaque" x="350" y="10" width="110" height="10" isRemoveLineWhenBlank="true" backcolor="#C2C2C2" uuid="5299e255-0128-47d8-baa0-df0442ab85f7">
 					<printWhenExpression><![CDATA[$P{IMPRIMIR_FECHA_PROCESAMIENTO}]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -444,7 +450,7 @@
 				<text><![CDATA[FECHA DE PROCESAMIENTO:]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement positionType="Float" x="410" y="10" width="90" height="10" isRemoveLineWhenBlank="true" uuid="35ef10cd-fd69-410f-a150-d4733150ebe4">
+				<reportElement positionType="Float" x="460" y="10" width="80" height="10" isRemoveLineWhenBlank="true" uuid="35ef10cd-fd69-410f-a150-d4733150ebe4">
 					<printWhenExpression><![CDATA[$P{IMPRIMIR_FECHA_PROCESAMIENTO}]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -456,7 +462,7 @@
 				<textFieldExpression><![CDATA[$P{FECHA_PROCESAMIENTO}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Opaque" x="0" y="30" width="500" height="10" forecolor="#000000" backcolor="#C2C2C2" uuid="207a5ad6-40e0-43ee-a208-9804384d82f3"/>
+				<reportElement mode="Opaque" x="0" y="30" width="540" height="10" forecolor="#000000" backcolor="#C2C2C2" uuid="207a5ad6-40e0-43ee-a208-9804384d82f3"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -470,7 +476,7 @@
 				<textFieldExpression><![CDATA[$P{SUBESPECIALIDAD}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="40" width="500" height="10" uuid="ab5d92bf-9ddb-453f-8ad2-6c9bc625f751"/>
+				<reportElement x="0" y="40" width="540" height="10" uuid="ab5d92bf-9ddb-453f-8ad2-6c9bc625f751"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -484,14 +490,14 @@
 				<textFieldExpression><![CDATA[$P{EXAMEN}]]></textFieldExpression>
 			</textField>
 			<frame>
-				<reportElement positionType="Float" x="0" y="60" width="500" height="36" isRemoveLineWhenBlank="true" uuid="b034dbab-e69c-4ea5-9a6f-1d5708d8e59c">
+				<reportElement positionType="Float" x="0" y="60" width="540" height="36" isRemoveLineWhenBlank="true" uuid="b034dbab-e69c-4ea5-9a6f-1d5708d8e59c">
 					<printWhenExpression><![CDATA[$P{IMPRIMIR_TABLA_PARAMETROS}]]></printWhenExpression>
 				</reportElement>
 				<box>
 					<pen lineWidth="0.5" lineColor="#000000"/>
 				</box>
 				<componentElement>
-					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="500" height="27" forecolor="#000000" uuid="b8f42196-61c8-4380-9133-82d478acb1b1">
+					<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="540" height="20" forecolor="#000000" uuid="b8f42196-61c8-4380-9133-82d478acb1b1">
 						<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 						<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
 						<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
@@ -501,14 +507,14 @@
 						<datasetRun subDataset="DataSetTablaParametros" uuid="a51c1012-a1e5-4639-8054-edcb3bc89730">
 							<dataSourceExpression><![CDATA[$P{TABLA_PARAMETROS}]]></dataSourceExpression>
 						</datasetRun>
-						<jr:columnGroup width="500" uuid="2a158aac-3b37-4f08-8f9a-d7e2c1dee861">
+						<jr:columnGroup width="540" uuid="2a158aac-3b37-4f08-8f9a-d7e2c1dee861">
 							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [5]"/>
-							<jr:columnGroup width="180" uuid="bc684748-8110-4b35-a3d2-4d5059a2daf5">
+							<jr:columnGroup width="200" uuid="bc684748-8110-4b35-a3d2-4d5059a2daf5">
 								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [2]"/>
 								<jr:columnHeader style="Table_CH" height="10" rowSpan="1">
 									<property name="com.jaspersoft.studio.unit.height" value="px"/>
 									<staticText>
-										<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="180" height="10" backcolor="#FFFFFF" uuid="7786a318-5df0-4717-870e-1244c95490fa"/>
+										<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="200" height="10" backcolor="#FFFFFF" uuid="7786a318-5df0-4717-870e-1244c95490fa"/>
 										<box>
 											<pen lineWidth="0.5"/>
 										</box>
@@ -518,38 +524,39 @@
 										<text><![CDATA[PARAMETROS]]></text>
 									</staticText>
 								</jr:columnHeader>
-								<jr:column width="75" uuid="0a81100b-7664-4323-a817-0e95239ee193">
+								<jr:column width="80" uuid="0a81100b-7664-4323-a817-0e95239ee193">
 									<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
 									<jr:columnHeader style="Table_CH" height="0" rowSpan="1"/>
-									<jr:detailCell style="Column Group" height="17">
+									<jr:detailCell style="Column Group" height="10">
+										<property name="com.jaspersoft.studio.unit.height" value="px"/>
 										<textField isStretchWithOverflow="true">
-											<reportElement positionType="Float" isPrintRepeatedValues="false" mode="Transparent" x="0" y="0" width="75" height="17" uuid="a3b765b0-88c3-4e6c-89c3-80183b43a469"/>
+											<reportElement positionType="Float" isPrintRepeatedValues="false" mode="Transparent" x="0" y="0" width="80" height="10" uuid="a3b765b0-88c3-4e6c-89c3-80183b43a469"/>
 											<textElement verticalAlignment="Middle">
-												<font size="8" isBold="true"/>
+												<font size="7" isBold="true"/>
 											</textElement>
 											<textFieldExpression><![CDATA[$F{grupoParametro}]]></textFieldExpression>
 										</textField>
 									</jr:detailCell>
 								</jr:column>
-								<jr:column width="105" uuid="c4a83718-9daa-4086-a3b1-83026a877f63">
+								<jr:column width="120" uuid="c4a83718-9daa-4086-a3b1-83026a877f63">
 									<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
 									<jr:columnHeader style="Table_CH" height="0" rowSpan="1"/>
-									<jr:detailCell style="Column Group" height="17">
+									<jr:detailCell style="Column Group" height="10">
 										<textField isStretchWithOverflow="true">
-											<reportElement positionType="Float" mode="Transparent" x="0" y="0" width="105" height="17" isPrintWhenDetailOverflows="true" backcolor="rgba(255, 255, 255, 0.98039216)" uuid="8131adb3-dbca-46c3-8853-77ad778a5714"/>
+											<reportElement positionType="Float" mode="Transparent" x="0" y="0" width="120" height="10" isPrintWhenDetailOverflows="true" backcolor="rgba(255, 255, 255, 0.98039216)" uuid="8131adb3-dbca-46c3-8853-77ad778a5714"/>
 											<textElement verticalAlignment="Middle">
-												<font size="8"/>
+												<font size="7"/>
 											</textElement>
 											<textFieldExpression><![CDATA[$F{parametro}]]></textFieldExpression>
 										</textField>
 									</jr:detailCell>
 								</jr:column>
 							</jr:columnGroup>
-							<jr:column width="100" uuid="779ac9ca-ad7e-44f2-9f1a-0261ec64294a">
+							<jr:column width="110" uuid="779ac9ca-ad7e-44f2-9f1a-0261ec64294a">
 								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
 								<jr:columnHeader style="Table_CH" height="10" rowSpan="2">
 									<staticText>
-										<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="100" height="10" uuid="13b4f60d-11a8-4e3d-b8d7-5f1c912377ac"/>
+										<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="110" height="10" uuid="13b4f60d-11a8-4e3d-b8d7-5f1c912377ac"/>
 										<box>
 											<pen lineWidth="0.5"/>
 										</box>
@@ -559,11 +566,11 @@
 										<text><![CDATA[RESULTADO]]></text>
 									</staticText>
 								</jr:columnHeader>
-								<jr:detailCell style="Table_TD" height="17">
+								<jr:detailCell style="Table_TD" height="10">
 									<textField isStretchWithOverflow="true">
-										<reportElement positionType="Float" mode="Transparent" x="0" y="0" width="100" height="17" isPrintWhenDetailOverflows="true" uuid="1ed27a5d-6a61-4333-b656-2071a3b70b32"/>
+										<reportElement positionType="Float" mode="Transparent" x="0" y="0" width="110" height="10" isPrintWhenDetailOverflows="true" uuid="1ed27a5d-6a61-4333-b656-2071a3b70b32"/>
 										<textElement textAlignment="Center" verticalAlignment="Middle">
-											<font size="8"/>
+											<font size="7"/>
 										</textElement>
 										<textFieldExpression><![CDATA[$F{parametroResultado}]]></textFieldExpression>
 									</textField>
@@ -583,22 +590,22 @@
 										<text><![CDATA[VALOR NORMAL]]></text>
 									</staticText>
 								</jr:columnHeader>
-								<jr:detailCell style="Table_TD" height="17">
+								<jr:detailCell style="Table_TD" height="10">
 									<textField isStretchWithOverflow="true" isBlankWhenNull="false">
-										<reportElement positionType="Float" mode="Transparent" x="0" y="0" width="130" height="17" isPrintWhenDetailOverflows="true" uuid="95c43663-7846-4e44-898f-2cdc7d2545c0"/>
+										<reportElement positionType="Float" mode="Transparent" x="0" y="0" width="130" height="10" isPrintWhenDetailOverflows="true" uuid="95c43663-7846-4e44-898f-2cdc7d2545c0"/>
 										<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-											<font size="8"/>
+											<font size="7"/>
 											<paragraph lineSpacing="Single"/>
 										</textElement>
 										<textFieldExpression><![CDATA[$F{parametroValorNormal}]]></textFieldExpression>
 									</textField>
 								</jr:detailCell>
 							</jr:column>
-							<jr:column width="90" uuid="671da6c2-625d-40c1-9492-349a2ea38d1f">
+							<jr:column width="100" uuid="671da6c2-625d-40c1-9492-349a2ea38d1f">
 								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
 								<jr:columnHeader style="Table_CH" height="10" rowSpan="2">
 									<staticText>
-										<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="90" height="10" uuid="f123121d-02b3-408f-bb95-f4c304e81614"/>
+										<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="100" height="10" uuid="f123121d-02b3-408f-bb95-f4c304e81614"/>
 										<box>
 											<pen lineWidth="0.5"/>
 										</box>
@@ -608,12 +615,12 @@
 										<text><![CDATA[METODO]]></text>
 									</staticText>
 								</jr:columnHeader>
-								<jr:detailCell style="Table_TD" height="17">
+								<jr:detailCell style="Table_TD" height="10">
 									<property name="com.jaspersoft.studio.unit.height" value="px"/>
 									<textField isStretchWithOverflow="true">
-										<reportElement positionType="Float" mode="Transparent" x="0" y="0" width="90" height="17" isPrintWhenDetailOverflows="true" uuid="d2e26374-7739-4a5d-b79a-7af89d6d14af"/>
+										<reportElement positionType="Float" mode="Transparent" x="0" y="0" width="100" height="10" isPrintWhenDetailOverflows="true" uuid="d2e26374-7739-4a5d-b79a-7af89d6d14af"/>
 										<textElement textAlignment="Center" verticalAlignment="Middle">
-											<font size="8"/>
+											<font size="7"/>
 										</textElement>
 										<textFieldExpression><![CDATA[$F{parametrosMetodo}]]></textFieldExpression>
 									</textField>
@@ -623,7 +630,7 @@
 					</jr:table>
 				</componentElement>
 				<textField isBlankWhenNull="true">
-					<reportElement positionType="Float" mode="Opaque" x="0" y="27" width="500" height="9" isRemoveLineWhenBlank="true" backcolor="#D6D6D6" uuid="66c7b016-0c66-4c17-bb43-c86d02e275d1">
+					<reportElement positionType="Float" mode="Opaque" x="0" y="27" width="540" height="9" isRemoveLineWhenBlank="true" backcolor="#D6D6D6" uuid="66c7b016-0c66-4c17-bb43-c86d02e275d1">
 						<printWhenExpression><![CDATA[$P{IMPRIMIR_SENSIBILIDAD_ESPECIFICIDAD}]]></printWhenExpression>
 					</reportElement>
 					<textElement>
@@ -633,7 +640,7 @@
 				</textField>
 			</frame>
 			<frame>
-				<reportElement positionType="Float" x="0" y="110" width="500" height="45" isRemoveLineWhenBlank="true" forecolor="#000000" uuid="12eb9da1-1646-4cab-ac47-962e9f5cf296">
+				<reportElement positionType="Float" x="0" y="110" width="540" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" uuid="12eb9da1-1646-4cab-ac47-962e9f5cf296">
 					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<printWhenExpression><![CDATA[$P{IMPRIMIR_CUADRO_OBSERVACION_MACROSCOPICA}]]></printWhenExpression>
@@ -646,18 +653,18 @@
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<staticText>
-					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="500" height="10" backcolor="#D6D6D6" uuid="53d18dee-6f78-43a4-be75-9710e7bb8715"/>
+					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="540" height="10" backcolor="#D6D6D6" uuid="53d18dee-6f78-43a4-be75-9710e7bb8715"/>
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font size="7" isBold="true"/>
 					</textElement>
 					<text><![CDATA[OBSERVACION MACROSCOPICA]]></text>
 				</staticText>
 				<frame>
-					<reportElement positionType="Float" x="0" y="10" width="500" height="18" isRemoveLineWhenBlank="true" uuid="970a186f-df25-4b60-8ea2-feed19c080ab">
+					<reportElement positionType="Float" x="0" y="10" width="540" height="10" isRemoveLineWhenBlank="true" uuid="970a186f-df25-4b60-8ea2-feed19c080ab">
 						<printWhenExpression><![CDATA[$P{IMPRIMIR_TABLA_PARASITARIA_MACROSCOPICA}]]></printWhenExpression>
 					</reportElement>
 					<componentElement>
-						<reportElement positionType="Float" x="0" y="0" width="500" height="18" uuid="174f4de1-cd22-46ea-bebc-c6d3fb5a1907">
+						<reportElement positionType="Float" x="0" y="0" width="540" height="10" uuid="174f4de1-cd22-46ea-bebc-c6d3fb5a1907">
 							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 							<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
 							<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
@@ -667,11 +674,12 @@
 							<datasetRun subDataset="DataSetTablaParasitariaMacroscopica" uuid="d101494e-e946-4953-8ccb-2d69dbd3fe9f">
 								<dataSourceExpression><![CDATA[$P{TABLA_PARASITARIA_MACROSCOPICA}]]></dataSourceExpression>
 							</datasetRun>
-							<jr:column width="500" uuid="f535ef04-aaaa-4018-89ac-edd9b50efe38">
+							<jr:column width="590" uuid="f535ef04-aaaa-4018-89ac-edd9b50efe38">
 								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
-								<jr:detailCell style="Table 1_TD" height="18">
+								<jr:detailCell style="Table 1_TD" height="10">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
 									<textField>
-										<reportElement x="0" y="0" width="500" height="18" uuid="d352d08d-d05f-46d0-aa3f-1736055a5df9"/>
+										<reportElement x="0" y="0" width="590" height="10" uuid="d352d08d-d05f-46d0-aa3f-1736055a5df9"/>
 										<box>
 											<pen lineWidth="0.5"/>
 											<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -679,70 +687,6 @@
 											<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 											<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 										</box>
-										<textElement verticalAlignment="Middle">
-											<font size="8"/>
-										</textElement>
-										<textFieldExpression><![CDATA[$F{parasito}]]></textFieldExpression>
-									</textField>
-								</jr:detailCell>
-							</jr:column>
-						</jr:table>
-					</componentElement>
-				</frame>
-				<staticText>
-					<reportElement positionType="Float" x="0" y="28" width="500" height="17" isRemoveLineWhenBlank="true" uuid="24fc90be-8066-4769-8674-fb332a241ffc">
-						<printWhenExpression><![CDATA[$P{IMPRIMIR_CUADRO_NO_SE_OBSERVAN_FORMAS_PARASITARIAS_MACROSCOPICA}]]></printWhenExpression>
-					</reportElement>
-					<textElement>
-						<font size="8"/>
-					</textElement>
-					<text><![CDATA[No se observan formas parasitarias.]]></text>
-				</staticText>
-			</frame>
-			<frame>
-				<reportElement positionType="Float" x="0" y="160" width="500" height="45" isRemoveLineWhenBlank="true" uuid="89099b25-c243-4ecf-b28d-33b52f84f784">
-					<printWhenExpression><![CDATA[$P{IMPRIMIR_CUADRO_OBSERVACION_MICROSCOPICA}]]></printWhenExpression>
-				</reportElement>
-				<box>
-					<pen lineColor="#CC0EC6"/>
-					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-				</box>
-				<staticText>
-					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="500" height="10" backcolor="#D6D6D6" uuid="5f165a9c-937d-48b8-bf2e-19a22b063d97"/>
-					<textElement textAlignment="Center" verticalAlignment="Middle">
-						<font size="7" isBold="true"/>
-					</textElement>
-					<text><![CDATA[OBSERVACION MICROSCOPICA]]></text>
-				</staticText>
-				<frame>
-					<reportElement positionType="Float" x="0" y="10" width="500" height="18" isRemoveLineWhenBlank="true" uuid="30a8b66f-b314-406e-a326-201559f8bb42">
-						<printWhenExpression><![CDATA[$P{IMPRIMIR_TABLA_PARASITARIA_MICROSCOPICA}]]></printWhenExpression>
-					</reportElement>
-					<componentElement>
-						<reportElement positionType="Float" x="0" y="0" width="500" height="18" uuid="674204a2-4734-4c31-98d0-132b3226cac9">
-							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
-							<property name="com.jaspersoft.studio.table.style.table_header" value="Table 2_TH"/>
-							<property name="com.jaspersoft.studio.table.style.column_header" value="Table 2_CH"/>
-							<property name="com.jaspersoft.studio.table.style.detail" value="Table 2_TD"/>
-						</reportElement>
-						<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
-							<datasetRun subDataset="DataSetTablaParasitariaMicroscopica" uuid="b1171345-1a1e-41f4-be33-efc4c79f6e81">
-								<dataSourceExpression><![CDATA[$P{TABLA_PARASITARIA_MICROSCOPICA}]]></dataSourceExpression>
-							</datasetRun>
-							<jr:column width="500" uuid="87b824e8-8b1b-4433-a25e-a59eaf7455d2">
-								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
-								<jr:detailCell style="Table 2_TD" height="18">
-									<box>
-										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-										<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
-									</box>
-									<textField>
-										<reportElement x="0" y="0" width="500" height="18" uuid="c5ab1e72-4169-483d-b51d-edb8fceb1dfe"/>
 										<textElement verticalAlignment="Middle">
 											<font size="7"/>
 										</textElement>
@@ -754,17 +698,82 @@
 					</componentElement>
 				</frame>
 				<staticText>
-					<reportElement positionType="Float" x="0" y="28" width="500" height="17" isRemoveLineWhenBlank="true" uuid="c1cfa623-6748-441f-b558-e3335d17d161">
+					<reportElement positionType="Float" x="0" y="20" width="540" height="10" isRemoveLineWhenBlank="true" uuid="24fc90be-8066-4769-8674-fb332a241ffc">
+						<printWhenExpression><![CDATA[$P{IMPRIMIR_CUADRO_NO_SE_OBSERVAN_FORMAS_PARASITARIAS_MACROSCOPICA}]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<text><![CDATA[No se observan formas parasitarias.]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" x="0" y="150" width="540" height="30" isRemoveLineWhenBlank="true" uuid="89099b25-c243-4ecf-b28d-33b52f84f784">
+					<printWhenExpression><![CDATA[$P{IMPRIMIR_CUADRO_OBSERVACION_MICROSCOPICA}]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineColor="#CC0EC6"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="540" height="10" backcolor="#D6D6D6" uuid="5f165a9c-937d-48b8-bf2e-19a22b063d97"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="7" isBold="true"/>
+					</textElement>
+					<text><![CDATA[OBSERVACION MICROSCOPICA]]></text>
+				</staticText>
+				<frame>
+					<reportElement positionType="Float" x="0" y="10" width="540" height="10" isRemoveLineWhenBlank="true" uuid="30a8b66f-b314-406e-a326-201559f8bb42">
+						<printWhenExpression><![CDATA[$P{IMPRIMIR_TABLA_PARASITARIA_MICROSCOPICA}]]></printWhenExpression>
+					</reportElement>
+					<componentElement>
+						<reportElement positionType="Float" x="0" y="0" width="540" height="10" uuid="674204a2-4734-4c31-98d0-132b3226cac9">
+							<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+							<property name="com.jaspersoft.studio.table.style.table_header" value="Table 2_TH"/>
+							<property name="com.jaspersoft.studio.table.style.column_header" value="Table 2_CH"/>
+							<property name="com.jaspersoft.studio.table.style.detail" value="Table 2_TD"/>
+						</reportElement>
+						<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+							<datasetRun subDataset="DataSetTablaParasitariaMicroscopica" uuid="b1171345-1a1e-41f4-be33-efc4c79f6e81">
+								<dataSourceExpression><![CDATA[$P{TABLA_PARASITARIA_MICROSCOPICA}]]></dataSourceExpression>
+							</datasetRun>
+							<jr:column width="590" uuid="87b824e8-8b1b-4433-a25e-a59eaf7455d2">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+								<jr:detailCell style="Table 2_TD" height="10">
+									<property name="com.jaspersoft.studio.unit.height" value="px"/>
+									<box>
+										<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+										<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									</box>
+									<textField>
+										<reportElement x="0" y="0" width="590" height="10" uuid="c5ab1e72-4169-483d-b51d-edb8fceb1dfe"/>
+										<textElement verticalAlignment="Middle">
+											<font size="7"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{parasito}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+						</jr:table>
+					</componentElement>
+				</frame>
+				<staticText>
+					<reportElement positionType="Float" x="0" y="20" width="540" height="10" isRemoveLineWhenBlank="true" uuid="c1cfa623-6748-441f-b558-e3335d17d161">
 						<printWhenExpression><![CDATA[$P{IMPRIMIR_CUADRO_NO_SE_OBSERVAN_FORMAS_PARASITARIAS_MICROSCOPICA}]]></printWhenExpression>
 					</reportElement>
 					<textElement>
-						<font size="8"/>
+						<font size="7"/>
 					</textElement>
 					<text><![CDATA[No se observan formas parasitarias.]]></text>
 				</staticText>
 			</frame>
 			<staticText>
-				<reportElement positionType="Float" mode="Opaque" x="0" y="216" width="70" height="10" isRemoveLineWhenBlank="true" backcolor="#C2C2C2" uuid="5da7fbf8-75c2-44bc-810d-9c9f2b9c075f">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="190" width="70" height="10" isRemoveLineWhenBlank="true" backcolor="#C2C2C2" uuid="5da7fbf8-75c2-44bc-810d-9c9f2b9c075f">
 					<printWhenExpression><![CDATA[$P{IMPRIMIR_RESULTADO}]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -780,7 +789,7 @@
 				<text><![CDATA[INTERPRETACION:]]></text>
 			</staticText>
 			<textField>
-				<reportElement positionType="Float" x="70" y="216" width="430" height="10" isRemoveLineWhenBlank="true" uuid="5fc8a677-9d93-47e2-92b6-5b929ecc1e26">
+				<reportElement positionType="Float" x="70" y="190" width="470" height="10" isRemoveLineWhenBlank="true" uuid="5fc8a677-9d93-47e2-92b6-5b929ecc1e26">
 					<printWhenExpression><![CDATA[$P{IMPRIMIR_RESULTADO}]]></printWhenExpression>
 				</reportElement>
 				<box>
@@ -796,7 +805,7 @@
 				<textFieldExpression><![CDATA[$P{RESULTADO}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" mode="Opaque" x="0" y="238" width="500" height="10" isRemoveLineWhenBlank="true" backcolor="#C2C2C2" uuid="ecaf9921-c583-4399-801d-5dae57b764ba"/>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="210" width="540" height="10" isRemoveLineWhenBlank="true" backcolor="#C2C2C2" uuid="ecaf9921-c583-4399-801d-5dae57b764ba"/>
 				<box>
 					<pen lineColor="#5F52AB"/>
 					<topPen lineStyle="Solid"/>
@@ -810,7 +819,7 @@
 				<text><![CDATA[OBSERVACIONES:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement positionType="Float" x="0" y="248" width="500" height="20" isRemoveLineWhenBlank="true" uuid="b6b8785d-953c-4d96-82e5-686d5b01eefd"/>
+				<reportElement positionType="Float" x="0" y="220" width="540" height="20" isRemoveLineWhenBlank="true" uuid="b6b8785d-953c-4d96-82e5-686d5b01eefd"/>
 				<box>
 					<pen lineColor="#C98934"/>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -824,7 +833,7 @@
 				<textFieldExpression><![CDATA[$P{OBSERVACIONES}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" mode="Opaque" x="0" y="278" width="500" height="10" isRemoveLineWhenBlank="true" backcolor="#C2C2C2" uuid="71ef196f-1291-41de-bd21-a36d5bf516e1"/>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="250" width="540" height="10" isRemoveLineWhenBlank="true" backcolor="#C2C2C2" uuid="71ef196f-1291-41de-bd21-a36d5bf516e1"/>
 				<box>
 					<pen lineColor="#4FC982"/>
 					<topPen lineStyle="Solid"/>
@@ -838,7 +847,7 @@
 				<text><![CDATA[RECOMENDACIONES:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement positionType="Float" x="0" y="288" width="500" height="20" isRemoveLineWhenBlank="true" uuid="61917851-e6d5-43d1-a804-cd4104c2f9d7"/>
+				<reportElement positionType="Float" x="0" y="260" width="540" height="20" isRemoveLineWhenBlank="true" uuid="61917851-e6d5-43d1-a804-cd4104c2f9d7"/>
 				<box>
 					<pen lineColor="#F23B2E"/>
 					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
