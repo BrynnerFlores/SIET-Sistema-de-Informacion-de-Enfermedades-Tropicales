@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.4.0  -->
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.4.0  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ResultadoLeishmaniasis" pageWidth="612" pageHeight="792" columnWidth="500" leftMargin="56" rightMargin="56" topMargin="56" bottomMargin="56" uuid="cdd8fd0c-8230-4071-905b-e4a5ab16d9e1">
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -20,6 +20,8 @@
 	<parameter name="CUALITATIVO" class="java.lang.String"/>
 	<parameter name="SEMICUANTITATIVO" class="java.lang.String"/>
 	<parameter name="OBSERVACIONES" class="java.lang.String"/>
+	<parameter name="REPORTE_RESULTADOS" class="java.lang.String"/>
+	<parameter name="ENTREGA_RESULTADOS" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
@@ -406,7 +408,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font size="7"/>
 					</textElement>
-					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$P{ENTREGA_RESULTADOS}]]></textFieldExpression>
 				</textField>
 				<textField pattern="dd MMMMM, yyyy">
 					<reportElement x="290" y="20" width="110" height="60" uuid="f2eb5091-5754-4143-9650-9a0a6ac6a1c2"/>
@@ -416,7 +418,7 @@
 					<textElement textAlignment="Center" verticalAlignment="Middle">
 						<font size="7"/>
 					</textElement>
-					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$P{REPORTE_RESULTADOS}]]></textFieldExpression>
 				</textField>
 			</frame>
 			<frame>

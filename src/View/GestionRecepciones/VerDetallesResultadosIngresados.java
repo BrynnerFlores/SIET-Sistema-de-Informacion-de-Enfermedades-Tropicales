@@ -953,6 +953,8 @@ public class VerDetallesResultadosIngresados extends javax.swing.JDialog {
                     });
 
                     parameters.put("OBSERVACIONES", resultadoGeneralPersonalizado.getResultadoGeneral().getObservaciones());
+                    parameters.put("REPORTE_RESULTADOS", resultadoGeneralPersonalizado.getResultadoGeneral().getFechaFinal().toString());
+                    parameters.put("ENTREGA_RESULTADOS", resultadoGeneralPersonalizado.getResultadoGeneral().getFechaFinal().toString());
                 }
                 jasperReport = JasperCompileManager.compileReport(this.getClass().getResourceAsStream("ResultadoLeishmaniasis.jrxml"));
                 break;
